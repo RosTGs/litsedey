@@ -1,0 +1,21 @@
+# User content and credentials never belong in the source repository.
+data/
+settings.json
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+checkpoints/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+build/
+dist/
+Kadr.app/
+*.l2dstudio.zip
+*.psd
+.coverage
+.pytest_cache/

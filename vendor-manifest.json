@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "verification": "MediaPipe JS/WASM match npm @mediapipe/tasks-vision 1.1.0; Universal Modder helpers match source commit 2c2201437ca676fb4e5f06a18fff6e8db99eef0f.",
+  "files": {
+    "vendor/LICENSE-universal-modder": {
+      "sha256": "db6cfa2ad2c44f73080440c866c4a3a078749d84ba40b4dfa27d50f18a525543",
+      "bytes": 1096
+    },
+    "vendor/um/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "vendor/um/comfy.py": {
+      "sha256": "5b37767db39c5b7dfe410816bbbc659aa5da8fe207ae30cd7e500d08b2040f89",
+      "bytes": 15175
+    },
+    "vendor/um/common.py": {
+      "sha256": "e205371fd483428706d0ecdc8ac7861e3d69884e65d29958fc841f1017beab26",
+      "bytes": 3402
+    },
+    "web/fonts/InterVariable.woff2": {
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+      "bytes": 352240
+    },
+    "web/fonts/LICENSE.txt": {
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "bytes": 4380
+    },
+    "web/vendor/mediapipe/LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "web/vendor/mediapipe/README.md": {
+      "sha256": "8326ed0beb1983b69cccb190937c2e368388969cb3ade06010fe51e0d5339308",
+      "bytes": 9259
+    },
+    "web/vendor/mediapipe/SOURCE.json": {
+      "sha256": "f3914f97bf9bfff299a839afe55ea443175eae179762562c7a1b4ae4a2dacd47",
+      "bytes": 269
+    },
+    "web/vendor/mediapipe/face_landmarker.task": {
+      "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+      "bytes": 3758596
+    },
+    "web/vendor/mediapipe/package.json": {
+      "sha256": "1b6bd640d09f7233cb8b9f8c5381ed706743ce97eb970db267db975089ab7663",
+      "bytes": 1192
+    },
+    "web/vendor/mediapipe/vision_bundle.cjs": {
+      "sha256": "3ca0c6833021ed1a39abf3a71fb6ddd23d34f4a85361a55a42a61a1c73695b03",
+      "bytes": 156240
+    },
+    "web/vendor/mediapipe/vision_bundle.mjs": {
+      "sha256": "9d5fc9ef74b22329cf9aa88dc543956d192b8c254210b187271614713eb5b10c",
+      "bytes": 156135
+    },
+    "web/vendor/mediapipe/wasm/vision_wasm_internal.js": {
+      "sha256": "7c652617b5bef832f42878ce8c5f752b0724bca6054e4bc1013a37d4b1949723",
+      "bytes": 335393
+    },
+    "web/vendor/mediapipe/wasm/vision_wasm_internal.wasm": {
+      "sha256": "782eda3ec1f414fdb4f1d66a8b59093eb4d5ab437e06117796abf05962d68eef",
+      "bytes": 12997248
+    },
+    "web/vendor/mediapipe/wasm/vision_wasm_module_internal.js": {
+      "sha256": "70eff3956521b7de058d7173a4935c95e4a223c26ea624b9f5a936d3a043dcb0",
+      "bytes": 335431
+    },
+    "web/vendor/mediapipe/wasm/vision_wasm_module_internal.wasm": {
+      "sha256": "ee03b14a878e6c3c053a1bfa62e166dc45244be54dc0bbe61c578f710b771f6a",
+      "bytes": 12997272
+    },
+    "web/vendor/mediapipe/wasm/vision_wasm_nosimd_internal.js": {
+      "sha256": "510fc70a170eb8b46767a7abab2af89a7a8341fa5b3ebfb8a5de41a79b7fa9df",
+      "bytes": 335196
+    },
+    "web/vendor/mediapipe/wasm/vision_wasm_nosimd_internal.wasm": {
+      "sha256": "b802041d105876865d6a0806f2ff7c4419a7f1b80bc01340fe36e759c2030011",
+      "bytes": 12168316
+    }
+  }
+}

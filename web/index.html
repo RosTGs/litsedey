@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kadr — AI Model Studio</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Kadr, главная"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 5v22M24 5 10 16l14 11M5 5h5M5 27h5"/></svg><span>KADR<small>AI MODEL STUDIO</small></span></a>
+    <div class="document"><button id="rename" class="project-name">Новый персонаж</button><span id="save-status">Загрузка…</span></div>
+    <div class="top-actions"><button id="assembly-button">Быстрая сборка</button><button id="settings-button" class="quiet">Подключения <span class="dot"></span></button><button id="save-button">Сохранить</button><button id="export-button" class="primary">Экспорт <span aria-hidden="true">↗</span></button></div>
+  </header>
+  <aside class="sidebar">
+    <div class="project-picker"><label for="project-select">ПРОЕКТ</label><div class="inline"><select id="project-select" aria-label="Текущий проект"></select><button id="new-project" class="square" aria-label="Создать проект">+</button></div></div>
+    <nav class="workspace-tabs" aria-label="Разделы редактора"><button data-tab="model" class="active"><span aria-hidden="true">◇</span> Модель</button><button data-tab="animation"><span aria-hidden="true">▷</span> Анимация</button><button data-tab="capture"><span aria-hidden="true">▣</span> Камера и захват</button><button data-tab="ai"><span aria-hidden="true">✧</span> AI-мастерская <small>AI</small></button></nav>
+    <div class="section-title"><h2>Слои</h2><button id="import-button" class="square" aria-label="Импортировать изображение, PSD или проект">+</button></div>
+    <div class="layer-filters"><label for="layer-search">Найти деталь</label><input id="layer-search" type="search" placeholder="Глаз, рот, волосы…"><label class="check"><input id="show-masks" type="checkbox"> Служебные маски</label></div>
+    <div id="layers" class="layers"></div>
+    <div class="sidebar-bottom"><button id="import-wide" class="wide">↑ Импорт файлов</button><p>PNG, JPG, WebP, PSD<br>или проект .l2dstudio.zip</p><div class="local-label"><span class="dot green"></span> Локальное рабочее пространство</div></div>
+  </aside>
+  <main class="workspace">
+    <div class="canvas-toolbar"><div class="tool-group" aria-label="Инструменты"><button id="move-tool" class="selected" title="Перемещать слой (V)" aria-label="Перемещать слой">↖</button><button id="mesh-tool" title="Редактировать вершины (M)" aria-label="Редактировать вершины">⌗</button></div><span class="separator"></span><label class="check"><input type="checkbox" id="show-mesh"> Сетка</label><div class="toolbar-right"><button id="undo" title="Отменить (⌘Z)" aria-label="Отменить">↶</button><button id="redo" title="Повторить (⌘⇧Z)" aria-label="Повторить">↷</button><button id="fit" aria-label="Уместить холст">Уместить</button><span id="zoom-label">100%</span></div></div>
+    <div class="canvas-shell" id="canvas-shell"><canvas id="canvas" tabindex="0" aria-label="Холст модели. Выберите слой и перемещайте его или вершины сетки. Стрелки смещают выбранный слой на один пиксель."></canvas><div class="canvas-meta"><span id="canvas-size"></span><span id="edit-badge">Базовая форма</span></div><div id="empty-canvas" hidden><span class="empty-icon">◇</span><h1>Дайте персонажу форму</h1><p>Импортируйте рисунок со слоями<br>или создайте первый образ в AI-мастерской.</p><button id="empty-import" class="primary">Импортировать рисунок</button></div></div>
+    <div class="timeline"><div class="timeline-head"><button id="play" aria-label="Воспроизвести анимацию">▶</button><span id="time-label">0.00 / 3.00 с</span><button id="add-frame">+ Ключевой кадр</button><button id="delete-frame" class="quiet">Удалить кадр</button><label class="duration">Длина <input id="duration" type="number" min="0.1" max="120" step="0.1" value="3"> с</label></div><div class="timeline-track"><input id="scrubber" type="range" min="0" max="3" step="0.01" value="0" aria-label="Время анимации"><div id="timeline-ticks" class="timeline-ticks"></div><div id="frame-markers"></div></div></div>
+  </main>
+  <aside class="inspector" id="inspector"></aside>
+  <footer class="statusbar"><span id="status-text">Собственный редактор 2D-моделей</span><span>Сетки · Ключевые формы · AI <span class="version">LOCAL / 0.4</span></span></footer>
+</div>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="dialog"><div class="dialog-header"><h2 id="dialog-title"></h2><button id="close-dialog" class="square" aria-label="Закрыть">×</button></div><div id="dialog-content"></div></dialog>
+<input id="file-input" type="file" accept=".png,.jpg,.jpeg,.webp,.psd,.zip" multiple hidden>
+<script src="/rig.js"></script><script src="/editor-ops.js"></script><script src="/renderer.js"></script><script src="/rig-ui.js"></script><script src="/editor-ui.js"></script><script src="/capture-map.js"></script><script src="/capture.js"></script><script src="/assembly.js"></script><script src="/app.js"></script>
+</body></html>
