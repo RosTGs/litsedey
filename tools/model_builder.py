@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Internal agent interface: analyze, plan, build Kadr models from versioned recipes."""
+"""Internal agent interface: analyze, plan, build Лицедей models from versioned recipes."""
 import argparse,json,sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))

@@ -119,7 +119,7 @@ class App:
             seed_demo(self.store)
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = 'Kadr/0.4'
+    server_version = 'Litsedey/0.4'
     def log_message(self, fmt, *args):
         pass
 
@@ -283,7 +283,7 @@ def main():
         app.seed()
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
     server.app=app
-    print('Kadr: http://127.0.0.1:%d'%server.server_port,flush=True)
+    print('Лицедей: http://127.0.0.1:%d'%server.server_port,flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

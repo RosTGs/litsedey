@@ -36,7 +36,7 @@ async function testCaptureRuntime(){
 }
 async function startCapture(){
  if(Capture.active||Capture.starting)return;
- if(!navigator.mediaDevices?.getUserMedia){captureStatus('В этом окне камера недоступна. Откройте Kadr.app или локальный адрес в Safari / Chrome.');return;}
+ if(!navigator.mediaDevices?.getUserMedia){captureStatus('В этом окне камера недоступна. Откройте Лицедей.app или локальный адрес в Safari / Chrome.');return;}
  stop();Capture.starting=true;Capture.neutral=null;Capture.values={};Capture.raw=null;const epoch=++Capture.epoch;
  const device=$('#camera-device').value;$('#camera-start').disabled=true;$('#camera-stop').disabled=false;$('#camera-device').disabled=true;$('#camera-test').disabled=true;captureStatus('Загрузка локального распознавателя…');
  try{
@@ -70,7 +70,7 @@ async function startCapture(){
    Capture.busy=true;Capture.lastTime=video.currentTime;Capture.lastFrame=now;
    try{const image=await createImageBitmap(video);if(epoch!==Capture.epoch){image.close();return;}worker.postMessage({type:'frame',image,time:now},[image]);Capture.timer=setTimeout(()=>{stopCapture();captureStatus('Захват не отвечает. Камера остановлена.');},10000);}catch(e){if(epoch===Capture.epoch){stopCapture();captureStatus('Не удалось прочитать кадр: '+e.message);}}
   };Capture.raf=requestAnimationFrame(tick);
- }catch(e){if(epoch!==Capture.epoch)return;stopCapture();const messages={NotAllowedError:'Доступ к камере не разрешён. Разрешите его для Kadr в настройках конфиденциальности macOS и в окне браузера.',NotFoundError:'Камера не найдена. Подключите камеру и попробуйте снова.',NotReadableError:'Камера занята или недоступна. Закройте другие приложения, использующие её.'};captureStatus(messages[e.name]||'Не удалось включить камеру: '+e.message);}
+ }catch(e){if(epoch!==Capture.epoch)return;stopCapture();const messages={NotAllowedError:'Доступ к камере не разрешён. Разрешите его для Лицедей в настройках конфиденциальности macOS и в окне браузера.',NotFoundError:'Камера не найдена. Подключите камеру и попробуйте снова.',NotReadableError:'Камера занята или недоступна. Закройте другие приложения, использующие её.'};captureStatus(messages[e.name]||'Не удалось включить камеру: '+e.message);}
 }
 function stopCapture(){
  ++Capture.epoch;Capture.active=false;Capture.starting=false;cancelAnimationFrame(Capture.raf);clearTimeout(Capture.timer);

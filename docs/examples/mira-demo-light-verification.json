@@ -1,0 +1,237 @@
+{
+  "roundtrip": [
+    {
+      "time": 0,
+      "identical_rgba": true
+    },
+    {
+      "time": 1.29,
+      "identical_rgba": true
+    },
+    {
+      "time": 1.34,
+      "identical_rgba": true
+    },
+    {
+      "time": 1.4,
+      "identical_rgba": true
+    },
+    {
+      "time": 1.46,
+      "identical_rgba": true
+    },
+    {
+      "time": 2.2,
+      "identical_rgba": true
+    },
+    {
+      "time": 4.69,
+      "identical_rgba": true
+    },
+    {
+      "time": 5.45,
+      "identical_rgba": true
+    },
+    {
+      "time": 6.25,
+      "identical_rgba": true
+    },
+    {
+      "time": 7.91,
+      "identical_rgba": true
+    },
+    {
+      "time": 8.7,
+      "identical_rgba": true
+    },
+    {
+      "time": 9,
+      "identical_rgba": true
+    }
+  ],
+  "independent_blinks": true,
+  "loop_identical": true,
+  "visible_mesh_defects": [],
+  "collapsed_mask_triangles_at_full_closure": 192,
+  "clipping": [
+    {
+      "opening": 0,
+      "gaze_x": -0.35,
+      "passed": true
+    },
+    {
+      "opening": 0,
+      "gaze_x": 0.35,
+      "passed": true
+    },
+    {
+      "opening": 0.05,
+      "gaze_x": -0.35,
+      "passed": true
+    },
+    {
+      "opening": 0.05,
+      "gaze_x": 0.35,
+      "passed": true
+    },
+    {
+      "opening": 0.25,
+      "gaze_x": -0.35,
+      "passed": true
+    },
+    {
+      "opening": 0.25,
+      "gaze_x": 0.35,
+      "passed": true
+    },
+    {
+      "opening": 0.5,
+      "gaze_x": -0.35,
+      "passed": true
+    },
+    {
+      "opening": 0.5,
+      "gaze_x": 0.35,
+      "passed": true
+    },
+    {
+      "opening": 1,
+      "gaze_x": -0.35,
+      "passed": true
+    },
+    {
+      "opening": 1,
+      "gaze_x": 0.35,
+      "passed": true
+    }
+  ],
+  "javascript_python": {
+    "max_error": 0,
+    "cases": 12
+  },
+  "tracks": {
+    "ParamEyeLOpen": {
+      "min": 0.0,
+      "max": 1,
+      "keys": 14
+    },
+    "ParamEyeROpen": {
+      "min": 0.0,
+      "max": 1,
+      "keys": 14
+    },
+    "ParamEyeBallX": {
+      "min": -0.30000000000000004,
+      "max": 0.30000000000000004,
+      "keys": 11
+    },
+    "ParamEyeBallY": {
+      "min": -0.025000000000000005,
+      "max": 0.04000000000000001,
+      "keys": 7
+    },
+    "ParamMouthOpenY": {
+      "min": 0,
+      "max": 0.279212962962963,
+      "keys": 6
+    },
+    "ParamAngleZ": {
+      "min": -0.26,
+      "max": 0.28,
+      "keys": 9
+    },
+    "ParamHairSwing": {
+      "min": -0.19572615498122353,
+      "max": 0.18167086155714202,
+      "keys": 271
+    },
+    "ParamBreath": {
+      "min": 0.12,
+      "max": 0.6499418337646438,
+      "keys": 5
+    },
+    "ParamBrowY": {
+      "min": 0,
+      "max": 0,
+      "keys": 2
+    }
+  },
+  "render_seconds": 35.24,
+  "source_files_unchanged": {
+    "exports/mira.project.json": "007b669df440eb3ddc3dc223c9b258a1f1da65f32387cae143ba478b435340ac",
+    "exports/Mira.l2dstudio.zip": "312f8caad7ac810c401a09f22349fbf31756c3ff952f510eb5f7b9c404ac63f3",
+    "workspace/projects/a182f1ca15ce48e0a558d9111b2006d0.json": "d59392bdf0368cb31550929d8c2ddc0fd8ebcbfb261fe106ddb4913dc9233663"
+  },
+  "project_id": "cf67d00c3c6648a6bb1b2edb8342789a",
+  "roundtrip_project_id": "9ab0c6fda8ee47b4986cc6ee9ad83ec6",
+  "duration": 9,
+  "fps": 30,
+  "frame_count": 270,
+  "layers": 20,
+  "artwork_parts": 18,
+  "parameters": 9,
+  "geometry_unchanged": true,
+  "rendering": "Kadr studio.rig.render_scene at 1199x1312; resized to 720x788, uniform background",
+  "sound": false,
+  "neural_video_generation": false,
+  "deliverables": {
+    "Mira-demo-light.mp4": {
+      "bytes": 609044,
+      "sha256": "a76fc8cd26cda8bb5907e37f7a15c9b53dfd430cfbafd6e23c452bf1844f9789"
+    },
+    "Mira-demo-light.gif": {
+      "bytes": 5412932,
+      "sha256": "b961f45be34573769bf9547eb505e204fe40977c064f64ff951583cb65d3c8ff"
+    },
+    "exports/Mira-demo-light.l2dstudio.zip": {
+      "bytes": 1635436,
+      "sha256": "ac56a8723d23554a8e7982e84497fcb5737e12f12343a82429537bc4d97c6031"
+    }
+  },
+  "encoded_media": {
+    "mp4": {
+      "codec": "h264",
+      "width": 720,
+      "height": 788,
+      "frames": 270,
+      "seconds": 9,
+      "decode_errors": 0
+    },
+    "gif": {
+      "codec": "gif",
+      "width": 548,
+      "height": 600,
+      "frames": 225,
+      "seconds": 9,
+      "decode_errors": 0
+    }
+  },
+  "loop_adjacent_frame_rgb_mae": {
+    "first_to_second": 0.005547330325249107,
+    "penultimate_to_last": 0.0028371169392742996,
+    "last_to_first": 0.0029510951306636586
+  },
+  "zip_integrity": {
+    "entries": 19,
+    "crc": true,
+    "private_paths_absent": true
+  },
+  "public_kadr_roundtrip": {
+    "project_id": "99702768191348d395ef0fe735842931",
+    "identical_frames": [
+      0,
+      1.4,
+      5.45
+    ],
+    "import_and_reopen": true
+  },
+  "visual_review": {
+    "checked": "12 full-figure and face frames including intermediate blink, tilt and mouth transition",
+    "observations": [
+      "No visible neck or hair separation at the limited tilt.",
+      "Existing eyelid crossfade briefly lightens the closed contour near opening 0.05, around 1.40 seconds.",
+      "Mouth has two artwork states, not phonemic lipsync.",
+      "No volumetric head turn or independent body/arm animation."
+    ]
+  }
+}

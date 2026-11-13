@@ -1,4 +1,4 @@
-"""Kadr mesh model, project validation and parameter JSON exports."""
+"""Лицедей mesh model, project validation and parameter JSON exports."""
 from __future__ import annotations
 import copy
 import math

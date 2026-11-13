@@ -23,7 +23,7 @@ if not available():
     (root/'data/server.pid').write_text(str(process.pid))
     for _ in range(40):
         if available():break
-        if process.poll() is not None:raise SystemExit('Не удалось запустить Kadr. Подробности: data/server.log')
+        if process.poll() is not None:raise SystemExit('Не удалось запустить Лицедей. Подробности: data/server.log')
         time.sleep(.25)
     else:raise SystemExit('Сервер не ответил. Подробности: data/server.log')
 webbrowser.open(url)

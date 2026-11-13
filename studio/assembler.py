@@ -1,4 +1,4 @@
-"""Deterministic assembly recipes for Kadr; creates a copy and never edits source artwork."""
+"""Deterministic assembly recipes for Лицедей; creates a copy and never edits source artwork."""
 import copy
 import math
 from .model import uid, validate

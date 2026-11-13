@@ -1,4 +1,4 @@
-"""Kadr hierarchy, masks and independent animation curves."""
+"""Лицедей hierarchy, masks and independent animation curves."""
 import math
 import copy
 from PIL import Image, ImageChops
